@@ -139,7 +139,8 @@ var FunnelComponent = function (_React$Component) {
           }), //eslint-disable-line
           values: []
         };
-        //console.debug(data);
+        console.log("data");
+        console.log(JSON.stringify(data));
         series.forEach(function (s) {
           var _steps = (0, _lodash.get)(data, 'actor.account.' + _this4.queryMap[s.label] + '.results[0].steps');
           if (results.values.length == 0) {
